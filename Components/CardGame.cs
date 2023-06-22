@@ -6,6 +6,7 @@ using AudioMgr;
 
 namespace Solitaire
 {
+    [RegisterTypeInIl2Cpp]
     public class CardGame : MonoBehaviour
     {
         public CardGame(IntPtr intPtr) : base(intPtr)

@@ -5,6 +5,7 @@ using UnityEngine;
 
 namespace Solitaire
 {
+	[RegisterTypeInIl2Cpp]
     public class CardControl : MonoBehaviour
     {
         public CardControl(IntPtr intPtr) : base(intPtr)

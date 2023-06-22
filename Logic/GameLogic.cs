@@ -40,7 +40,7 @@ namespace Solitaire
 				cardGame.playingCards[cardOrderOnStack[cardCounter]].cardColPosition = 0;
 				cardGame.playingCards[cardOrderOnStack[cardCounter]].cardRowPosition = cardCounter;
 				cardGame.playingCards[cardOrderOnStack[cardCounter]].cardIsOnTop = false;
-				cardGame.playingCards[cardOrderOnStack[cardCounter]].cardRigidbody.isKinematic = true;
+				
 
             }			
 		}

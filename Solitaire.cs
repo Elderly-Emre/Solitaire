@@ -17,15 +17,6 @@ namespace Solitaire
 
         public override void OnInitializeMelon()
 		{
-            ClassInjector.RegisterTypeInIl2Cpp<CardGame>();
-            ClassInjector.RegisterTypeInIl2Cpp<CardControl>();
-            ClassInjector.RegisterTypeInIl2Cpp<CardPlaceholder>();
-            ClassInjector.RegisterTypeInIl2Cpp<PlayingCard>();
-            ClassInjector.RegisterTypeInIl2Cpp<TweenFactory>();
-
-            Settings.OnLoad();
-
-
             LoadEmbeddedAssetBundle();
         }
 
@@ -78,7 +69,7 @@ namespace Solitaire
         public static void LoadEmbeddedAssetBundle()
         {
             MemoryStream memoryStream;
-            Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("Solitaire.Resources.cardaudio");
+            System.IO.Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("Solitaire.Resources.cardaudio");
             memoryStream = new MemoryStream((int)stream.Length);
             stream.CopyTo(memoryStream);
 

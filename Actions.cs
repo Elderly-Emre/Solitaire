@@ -39,42 +39,7 @@ namespace Solitaire
 			yield return null;
 		}
 
-		public static IEnumerator explode(CardGame cardGame)
-		{
-			
-
-			if (cardGame)
-			{
-				for (int cardToExplode = 0; cardToExplode < 52; cardToExplode++)
-				{
-                    MelonLogger.Msg("agdfgdfgsdfsgfdgdgdfg");
-
-                    //cardGame.playingCards[cardToExplode].cardObject.AddComponent<Rigidbody>();
-                    //cardGame.gameObject.layer = 17;
-                    //cardGame.playingCards[cardToExplode].cardObject.layer = 17;
-                    //cardGame.playingCards[cardToExplode].cardCollider.size = new Vector3(cardGame.playingCards[cardToExplode].GetComponent<BoxCollider>().size.x * 1.2f, cardGame.playingCards[cardToExplode].gameObject.GetComponent<BoxCollider>().size.y * 1.2f, cardGame.playingCards[cardToExplode].gameObject.GetComponent<BoxCollider>().size.z * 2f);
-                    if (cardGame.playingCards[cardToExplode].cardRigidbody)
-					{
-                        MelonLogger.Msg("foo1");
-                        cardGame.playingCards[cardToExplode].cardRigidbody.useGravity = true;
-                        MelonLogger.Msg("foo1");
-                        cardGame.playingCards[cardToExplode].cardRigidbody.isKinematic = false;
-                        MelonLogger.Msg("foo1");
-                        MelonLogger.Msg("foo1");
-                        //cardGame.playingCards[cardToExplode].cardObject.GetComponent<Rigidbody>().interpolation = RigidbodyInterpolation.Interpolate;
-                        cardGame.playingCards[cardToExplode].cardRigidbody.AddRelativeForce(new Vector3(UnityEngine.Random.Range(-0.03f, 0.03f), UnityEngine.Random.Range(-0.01f, 0.09f), UnityEngine.Random.Range(0.00f, 0.03f)), ForceMode.Impulse);
-                        MelonLogger.Msg("foo1");
-                        cardGame.playingCards[cardToExplode].cardRigidbody.AddTorque(new Vector3(UnityEngine.Random.Range(-5f, 5f), UnityEngine.Random.Range(-5f, 5f), UnityEngine.Random.Range(-5f, 5f)), ForceMode.Impulse);
-                        MelonLogger.Msg("foo1");
-                    }
-					
-					
-
-                }
-			}	
-
-			yield return null;
-		}
+		
 
 		public static bool EnterGameView(CardGame cardGame)
         {

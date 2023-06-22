@@ -164,14 +164,7 @@ namespace Solitaire
 						cardGame.playingCards[cardCreateCounter].cardTransform = singleCard.gameObject.transform;
 						cardGame.playingCards[cardCreateCounter].cardName = singleCard.gameObject.name;
 						cardGame.playingCards[cardCreateCounter].cardRenderer = singleCard.gameObject.GetComponent<MeshRenderer>();
-
-                        cardGame.playingCards[cardCreateCounter].cardRigidbody = singleCard.gameObject.AddComponent<Rigidbody>();
-					
-						cardGame.playingCards[cardCreateCounter].cardRigidbody.useGravity = false;
-                        cardGame.playingCards[cardCreateCounter].cardRigidbody.isKinematic = true;
-                        cardGame.playingCards[cardCreateCounter].cardRigidbody.mass = 0.002f;
-                        cardGame.playingCards[cardCreateCounter].cardRigidbody.drag = 6f;
-                        cardGame.playingCards[cardCreateCounter].cardRigidbody.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
+						                       
 
                         cardGame.playingCards[cardCreateCounter].cardCollider = singleCard.gameObject.GetComponent<BoxCollider>();
                         cardGame.playingCards[cardCreateCounter].parentGame = cardGame;

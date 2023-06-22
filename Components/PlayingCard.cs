@@ -5,6 +5,7 @@ using UnityEngine;
 
 namespace Solitaire
 {
+    [RegisterTypeInIl2Cpp]
     public class PlayingCard : MonoBehaviour
     {
         public PlayingCard(IntPtr intPtr) : base(intPtr)
@@ -23,7 +24,6 @@ namespace Solitaire
 
 		public CardGame parentGame;
 
-		public Rigidbody cardRigidbody;
 		public BoxCollider cardCollider;
 
 		public bool cardIsUncovered;

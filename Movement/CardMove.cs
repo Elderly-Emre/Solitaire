@@ -43,7 +43,7 @@ namespace Solitaire
 						{
 							offsetRow = order * offsetRowMod;
 						}
-						UnityEngine.Object.Destroy(cardGame.playingCards[card].gameObject.GetComponent<Rigidbody>());
+						
 
 
 						targetPosition = new Vector3(cardGame.cardPlaceholder[targetPlaceID].placeholderTransform.localPosition.x, cardGame.cardPlaceholder[targetPlaceID].placeholderTransform.localPosition.y + offsetHeight, cardGame.cardPlaceholder[targetPlaceID].placeholderTransform.localPosition.z - offsetRow);
