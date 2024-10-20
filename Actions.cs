@@ -5,7 +5,7 @@ using Harmony;
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
-using DigitalRuby.Tween;
+
 using Il2Cpp;
 
 namespace Solitaire
@@ -45,7 +45,7 @@ namespace Solitaire
         {
             MelonLogger.Msg("Starting card game ...");
             InputManager.ShowCursor(true);
-			CameraFade.StartAlphaFade(Color.black, true, 1, 0f, null);
+			//CameraFade.StartAlphaFade(Color.black, true, 1, 0f, null);
 			m_StartCameraFOV = GameManager.GetMainCamera().fieldOfView;
             m_StartPitchLimit = GameManager.GetVpFPSCamera().RotationPitchLimit;
             m_StartYawLimit = GameManager.GetVpFPSCamera().RotationYawLimit;
@@ -89,7 +89,7 @@ namespace Solitaire
 		public static bool ExitGameView(CardGame cardGame)
         {
             MelonLogger.Msg("Leaving card game ...");
-			CameraFade.StartAlphaFade(Color.black, true, 1, 0f, null);
+			//CameraFade.StartAlphaFade(Color.black, true, 1, 0f, null);
             cardGame.gameObject.layer = 17;
 			InputManager.ShowCursor(false);
 			GameManager.GetVpFPSCamera().m_PanViewCamera.m_IsDetachedFromPlayer = false;

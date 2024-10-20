@@ -18,7 +18,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace DigitalRuby.Tween
+namespace Solitaire
 {
     /// <summary>
     /// State of an ITween object
